@@ -1,4 +1,4 @@
-# 🦙 LangChain Streamlit ChatBot
+# LangChain Streamlit ChatBot
 
 A scalable, modular, and real-time chatbot platform powered by **LangChain**, **Streamlit**, and **Ollama**. Built with extensibility in mind, this project serves as a foundation for advanced AI interactions — including agents, tool integrations, multimodal inputs, and dynamic model selection.
 
@@ -40,14 +40,14 @@ LLMCHATBOT/
 ├── chains/                         # 🔗 LangChain pipelines
 │   └── chat_chain.py
 │
-├── agents/                         # 🕹️ Multi-agent logic (LangGraph, planners)
-│   └── planner_executor.py
+├── agents/                         # 🕹️ Future enchancement Multi-agent logic (LangGraph, planners)
+│   └── xyz.py
 │
-├── tools/                          # 🧰 Agent tools (file parsers, search, APIs)
-│   └── calculator_tool.py
+├── tools/                          # 🧰 Future enchancement  Agent tools (file parsers, search, APIs)
+│   └── xyz.py
 │
-├── config/                         # ⚙️ App/config settings
-│   └── model_settings.yaml
+├── config/                         # ⚙️ Future enchancement App/config settings
+│   └── xyz.yaml
 │
 ├── utils/                          # 🧼 Reusable utilities
 │   ├── env_loader.py

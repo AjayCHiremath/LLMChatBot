@@ -1,4 +1,12 @@
-from langchain_ollama import OllamaLLM
+from langchain_together import ChatTogether
+import os
 
 def load_llama_model(callbacks=None):
-    return OllamaLLM(model="llama3.1", streaming=True, callbacks=callbacks)
+    
+    return ChatTogether(
+        model="meta-llama/Llama-3-8b-chat-hf",
+        api_key=os.getenv("TOGETHER_API_KEY"),
+        max_tokens=512,
+        temperature=0.7,
+        callbacks=callbacks
+    )

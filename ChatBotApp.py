@@ -11,7 +11,7 @@ from utils.env_loader import load_environment
 from utils.streaming_callback import StreamToStreamlit
 
 # Load environment variables
-load_environment(['LANGCHAIN_API_KEY', 'LANGCHAIN_TRACING_V2', 'LANGSMITH_ENDPOINT', 'LANGCHAIN_PROJECT'])
+load_environment(['LANGCHAIN_API_KEY', 'LANGCHAIN_TRACING_V2', 'LANGSMITH_ENDPOINT', 'LANGCHAIN_PROJECT', 'TOGETHER_API_KEY'])
 
 # Streamlit config
 st.set_page_config(layout="wide")
@@ -62,7 +62,7 @@ if st.session_state.run_chain:
 
             answer = chain.invoke({"question": st.session_state.current_input})
             st.session_state.chat_history.append(("assistant", answer))
-
+            
         except Exception as e:
             st.error(f"Error: {e}")
 
